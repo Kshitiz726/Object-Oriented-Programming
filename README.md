@@ -1,2 +1,8 @@
 # THA078BCT021_lab
-OOP lab of THA078BCT021 (Kshitiz Raj Paudyal)
+lab 2 files - 
+
+
+
+
+Lab 3 files - 
+
