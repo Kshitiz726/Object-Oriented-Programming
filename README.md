@@ -1,12 +1,4 @@
 # THA078BCT021_lab
-LAB_2 FILES - 
-refrence.cpp
-swap.cpp
-name_space.cpp
-
-LAB_3 FILES
-main.cpp
-functions.cpp
-dma.cpp
-functions.h
+Lab number of every file is mentioned in its file name. While all the files functions is kept in a single file named 
+"all_lab_functions.cpp"
 

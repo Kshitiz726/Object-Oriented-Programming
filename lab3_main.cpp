@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include "functions.h"
+#include "all_lab_functions.h"
 using namespace std;
 int choice, area_cube, length;
 float area_rectangle, area_circle;
