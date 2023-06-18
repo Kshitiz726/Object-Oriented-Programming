@@ -2,7 +2,7 @@
 using namespace std;
 int *roll;
 char *name;
-// functions of lab_function_overloading
+// functions of lab3_function_overloading
 int calcArea(int length = 10) // use of default arguement as mentioned in lab
 {
     
@@ -24,7 +24,7 @@ float calcArea(float radius)
 
 
 
-//functions of lab_dynamic_memory_allocation
+//functions of lab3_dynamic_memory_allocation
 
 void memory_allocation()
 {
