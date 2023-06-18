@@ -114,62 +114,63 @@
 // }
 
  //3///
-// #include <iostream>
+#include <iostream>
 
-// class Complex {
-// private:
-//     double real;
-//     double imag;
-//     static int count; // Static data member to keep track of the total number of objects
+class Complex {
+private:
+    double real;
+    double imag;
+    static int count;
 
-// public:
-//     Complex(double real, double imag) : real(real), imag(imag) {
-//         count++; // Increment the count when an object is created
-//     }
+public:
+    Complex(double real, double imag) : real(real), imag(imag) {
+        count++;
+    }
 
-//     static void displayTotalObjects() {
-//         std::cout << "Total number of objects created: " << count << std::endl;
-//     }
-// };
+    static int getTotalCount() {
+        return count;
+    }
+};
 
-// int Complex::count = 0; // Initialize the static data member count to 0
+int Complex::count = 0; // Initialization of static data member count
 
-// int main() {
-//     Complex c1(3, 4);
-//     Complex c2(5, 6);
-//     Complex c3(7, 8);
+int main() {
+    Complex c1(3, 4);
+    Complex c2(5, 6);
+    Complex c3(7, 8);
 
-//     Complex::displayTotalObjects();
+    int totalCount = Complex::getTotalCount();
+    std::cout << "Total number of objects created: " << totalCount << std::endl;
 
-//     return 0;
-// }
+    return 0;
+}
 
-//FRIEND FUNCTION// declared inside the class, and defined outside it..
 
-// #include <iostream>
-// #include <cmath>
+#4
 
-// class Complex {
-// private:
-//     double real;
-//     double imag;
+#include <iostream>
+#include <cmath>
 
-// public:
-//     Complex(double real, double imag) : real(real), imag(imag) {}
+class Complex {
+private:
+    double real;
+    double imag;
 
-//     friend double calculateMagnitude(const Complex& complexNum);
-// };
+public:
+    Complex(double real, double imag) : real(real), imag(imag) {}
 
-// double calculateMagnitude(const Complex& complexNum) {
-//     double magnitude = std::sqrt(complexNum.real * complexNum.real + complexNum.imag * complexNum.imag);
-//     return magnitude;
-// }
+    friend double calculateMagnitude(const Complex& complexNum);
+};
 
-// int main() {
-//     Complex c1(3, 4);
-//     double magnitude = calculateMagnitude(c1);
-//     std::cout << "Magnitude of the complex number: " << magnitude << std::endl;
+double calculateMagnitude(const Complex& complexNum) {
+    double magnitude = std::sqrt(complexNum.real * complexNum.real + complexNum.imag * complexNum.imag);
+    return magnitude;
+}
 
-//     return 0;
-// }
+int main() {
+    Complex c(3, 4);
+    double magnitude = calculateMagnitude(c);
+    std::cout << "Magnitude of the complex number: " << magnitude << std::endl;
 
+    return 0;
+}
