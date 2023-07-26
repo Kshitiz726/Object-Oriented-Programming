@@ -25,12 +25,14 @@ class Design2{
 
     Design2(int code, float value): code(code), value(value){}
 
-    //conversion 
+    //conversion with chaining (generalised way ma)
     Design2& operator=(Design1 &d)
     {
         code = d.code;
         value = d.qty * d.price;
-        return *this;
+        return *this; 
+
+        // without chaining we can do this by returning value instead of refrence, which wont help in chaining 
     }
 };
 
