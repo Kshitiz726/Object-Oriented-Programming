@@ -60,3 +60,28 @@ EMPLOYEE  ASSISTANT
               |           |
      Animal --|           |--> Bat
               |--->Bird   |
+
+
+
+
+              -->public view mode
+
+              public members of the base class becomes the public member of the derived class
+
+              --> private visibility mode
+
+              public member of the base class beomes the private member of the derived class
+
+              -->PRIVATE MEMBERS ARE NEVER INHERITED
+
+
+              //default visibility mode is private
+
+              -->PROTECTED
+
+              private data member that can be inherited
+
+
+-->Member function overriding
+  Base class ma define vako methods haru derived class ma (same method name) bata aauda, teslai call  garda, 
+  derived vitra ko method call huncha, it is called member function overriding!
