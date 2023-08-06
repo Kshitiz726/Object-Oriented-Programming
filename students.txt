@@ -1,0 +1,6 @@
+Alice | 123 Main St, CityA | Computer Science
+Bob | 456 Park Ave, CityB | Engineering
+Ram | 789 Street Rd, CityC | Mathematics
+Alice | 123 Main St, CityA | Computer Science
+Bob | 456 Park Ave, CityB | Engineering
+Ram | 789 Street Rd, CityC | Mathematics
